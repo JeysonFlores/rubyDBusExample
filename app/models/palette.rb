@@ -1,6 +1,8 @@
 class PaletteTable
   def initialize(db)
+    puts db.class
     @db = db
+    puts @db.class
     @db.execute <<-SQL
             CREATE TABLE IF NOT EXISTS palettes (
                 id INTEGER NOT NULL PRIMARY KEY,

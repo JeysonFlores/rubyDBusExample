@@ -43,4 +43,4 @@ db.execute( "select * from students" ) do |row|
   p row
 end
 
-db.execute 'INSERT INTO palettes (id, name, desc) VALUES (NULL, "a", "asas");'
+db.execute 'INSERT INTO palettes (id, name, desc) VALUES (NULL, ?, ?);', ["Prueba", "Siono"]
